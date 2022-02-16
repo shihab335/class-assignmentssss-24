@@ -1,0 +1,622 @@
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
+}
+P{
+    padding-bottom: 0;
+}
+p,span{
+    font-family: 'Spartan', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+
+
+
+/* header section */
+
+
+.modify-menu1{
+    background: #E7E6E6;
+    padding: 0;
+}
+.modify-image{
+    width: 100px;
+}
+
+
+
+
+.modify-menu{}
+.modify-menu ul{}
+.modify-menu ul li {
+    padding: 0 5px;
+    display: inline-block;
+    position: relative;
+}
+.modify-menu ul li a {
+    display: inline-block;
+    padding: 24px 8px;
+    font-size: 18px;
+    color: #000000b0;
+    position: relative;
+}
+.modify-menu ul li a:hover{
+    color: #1010cc;
+}
+.modify-menu ul li:first-child a{
+    color: #1010cc;
+}
+.modify-menu ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #745ff0;
+    transition: .4s all ease-in-out;
+}
+.modify-menu ul li:first-child a::before{
+    width: 100%;
+}
+.modify-menu ul li a:hover::before{
+    width: 100%;
+}
+
+
+.modify-menu ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    padding: 17px;
+    opacity: 1;
+    visibility: hidden;
+    transition: .4s all ease-in-out;
+    z-index: 1;
+}
+.modify-menu ul ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    background: #000FFF;
+}
+.modify-menu ul ul li a{
+    display: inline-block;
+    color: #fff !important;
+    padding: 10px 8px;
+}
+.modify-menu ul ul li a::before{
+    width: 0;
+    height: 0;
+}
+.modify-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* 
+
+.header {
+    background: #E7E6E6;
+}
+.header-1 {
+    display: flex;
+}
+.head-logo {
+}
+.head-logo img {
+    width: 100px;
+    padding: 5px 0;
+}
+.head-menu {
+    margin-left: auto;
+}
+.head-menu ul {
+    display: flex; 
+}
+.head-menu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+}
+.head-menu ul li a {
+    padding: 23px 15px;
+    font-size: 18px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.692);
+    position: relative;
+    transition: .4s all ease-in-out;
+}
+.head-menu ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #070fe4;
+    transition: all .4s ease-in-out;
+}
+
+
+.head-menu ul li:first-child a::before{
+    width: 100%;
+}
+
+
+.head-menu ul li a:hover::before{
+    width: 100%;
+}
+.head-menu ul li a:hover{
+    color: #070fe4;
+}
+
+.head-menu ul li:first-child a{
+    color: #070fe4;
+}
+
+
+.head-menu ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 186px;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    z-index: 11;
+}
+.head-menu ul ul li {
+    padding: 20px;
+}
+.head-menu ul ul li a {
+    display: inline-block;
+    background: #0028ff;
+    color: #fff;
+}
+.head-menu ul ul li:first-child a{
+    color: #fff !important;
+}
+.head-menu ul ul li a:hover{
+    color: #fff;
+}
+.head-menu ul ul li a:hover::before{
+    width: 0;
+}
+.head-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}  */
+
+
+
+.head-btn {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.head-btn a {
+    background: #fff;
+    color: #0c67f5;
+    padding: 10px 25px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+
+.head-btn a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    z-index: -1;
+}
+.head-btn a:hover{
+    color: #fff;
+}
+.head-btn a:hover::before{
+    width: 100%;
+    background-color: #7773FF;
+}
+
+
+/* banner section */
+
+
+.banner {
+    background-color: #edf6ff;
+    position: relative;
+    overflow: hidden;
+    height: 645px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-iner h1 {
+	font-size: 43px;
+}
+
+.banner-iner p {
+    color: #606060;
+    margin-top: 40px;
+    margin-bottom: 55px;
+}
+.banner-iner a {
+    padding: 15px 35px;
+    background: #0074e8;
+    border: 1px solid #0074e8;
+    color: #fff;
+    border-radius: 25px;
+    transition: .4s all ease-in-out;
+}
+
+.banner-iner a:hover{
+    color: #0074e8;
+    background-color: #fff;
+    border: 1px solid #0074e8;
+}
+
+
+.banner-img img {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    right: -135px;
+}
+
+
+
+
+
+
+
+
+
+.banner-bot{
+    background-color: #fff;
+}
+.banner-bot-box{}
+.banner-bot-box {}
+.banner-bot-box1 {
+    color: #7f6be4;
+}
+.banner-bot-box h1 {
+    font-size: 39px;
+    padding-top: 10px;
+}
+.banner-bot-box p {
+    color: #606060;
+}
+.banner-blank {
+    display: inline-block;
+    width: 74px;
+    height: 3px;
+    background: #7f6be4;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+
+/* product section */
+
+.product{
+    padding-bottom: 60px;
+    position: relative;
+}
+.product-1{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.product-box {
+	background: #F9FCFF;
+	width: 90%;
+	margin-right: 21px;
+    box-shadow: 1px 1px 12px #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    transition: .4s all ease-in-out;
+}
+.product-box:last-child{
+    margin-right: 0;
+}
+.product-box h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.product-box span {
+    font-size: 35px;
+    width: 80px;
+    display: inline-block;
+    background: #5252f0;
+    border-radius: 50% 50% 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 80px;
+    position: relative;
+    transition: .4s all ease-in-out;
+}
+.product-box span::before {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	width: 45%;
+	height: 4px;
+	background-color: #9889EB;
+    transition: .4s all ease-in-out;
+}
+.product-box p {
+    margin-top: 25px;
+    color: #606060;
+}
+
+.product-img img {
+	position: absolute;
+	bottom: 9px;
+	left: 89px;
+	z-index: -1;
+}
+
+
+.product-box:hover{
+    background-color: #3B4BF4;
+    color: #fff;
+    transform: scale(1.05);
+}
+.product-box:hover.product-box p{
+    color: #fff;
+}
+.product-box:hover.product-box span{
+    background-color: #fff;
+    color: #3B4BF4;
+}
+.product-box:hover.product-box span::before{
+    background-color: #fff;
+    width: 60%;
+}
+/* .product-box:hover.product-img img{
+    z-index: -1;
+} */
+
+
+
+
+
+/* .product{
+    background-image: url(https://i.ibb.co/QcyLdBj/service-patern.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 84px;
+    padding-bottom: 50px;
+}
+.product-1 {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: -87px;
+    position: relative;
+}
+.product-box {
+    background: #f9fcff;
+    width: 23.5%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #ddd;
+    transition: .4s all ease-in-out;
+}
+.product-box h5 {
+}
+
+.icon-col{
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    background: #0074e8;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+.icon-col::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 0 0 40px;
+    border-color: transparent transparent transparent #0074e8;
+    z-index: -1;
+}
+
+
+
+.product-blank {
+	background-color: #0074e8;
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	margin-bottom: 15px;
+}
+.product-box p {
+    color: #606060;
+    font-size: 15px;
+}
+
+.product-box:hover{
+    transform: scale(1.05);
+    background-color: #0074e8;
+    color: #fff;
+}
+.product-box:hover p{
+    color: #fff;
+}
+.product-box:hover .product-blank{
+    background-color: #fff;
+}
+.product-box:hover .icon-col{
+    background-color: #fff;
+    color: #0074e8!important;
+}
+.product-box:hover .icon-col::before{
+    border-color: transparent transparent transparent #ffffff;
+} */
+
+
+
+/* animation section */
+
+.animation{
+    background-image: url(https://i.ibb.co/F5VthCs/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+.animation::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+.animation-box{
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 150px;
+}
+.animation-box h4 {
+    font-size: 20px;
+}
+.animation-box h3 {
+    font-size: 35px;
+    padding-top: 10px;
+}
+.animation-blank {
+    width: 100px;
+    height: 3px;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* animation */
+
+.animation-icon1 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.animation-icon1 span{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.animation-icon1 span i{
+    color: #0c67f5;
+    font-size: 20px;
+}
+.animation-icon1 span::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    animation: fristanimation 1.6s ease-in-out infinite;
+}
+.animation-icon1 span::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: fristanimation 1.6s ease-in-out infinite;
+}
+
+
+@keyframes fristanimation{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.1);
+        opacity: .5;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1.7);
+        opacity: .5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
